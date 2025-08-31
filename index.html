@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Editz</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+      color: #eee;
+    }
+    header {
+      background-color: #111;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 48px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+      color: #ccc;
+    }
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color: #00ffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #00ffff;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 0 0 5px #00ffff;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card, .editor-card, .service-card {
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .card:hover, .editor-card:hover, .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3, .editor-card h3, .service-card h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+    .card p, .editor-card p, .service-card p {
+      margin: 6px 0;
+    }
+    .editor-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .editor-card a {
+      font-family: 'Poppins', sans-serif;
+      color: #00ffff;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      transition: color 0.3s ease;
+    }
+    .editor-card a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: #eee;
+    }
+    button {
+      background-color: #00ffff;
+      color: #111;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    button:hover {
+      background-color: #00cccc;
+    }
+    @media (max-width: 768px) {
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Master Editz</h1>
+    <p>Your Vision, Our Precision</p>
+  </header>
+
+  <nav>
+    <a href="#team">Editors</a>
+    <a href="#demo">Shorts</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="team">
+    <h2>Meet Our Editors</h2>
+    <div class="grid">
+      <div class="editor-card">
+        <img src="anku.jpg" alt="Anku" />
+        <h3>Anku</h3>
+        <p>After Effects Editor</p>
+        <a href="anku.html">View Profile</a>
+      </div>
+      <div class="editor-card">
+        <img src="prinx.jpg" alt="Prinx" />
+        <h3>Prinx</h3>
+        <p>Premiere Pro Editor</p>
+        <a href="prinx.html">View Profile</a>
+      </div>
+      <div class="editor-card">
+        <img src="maxime.jpg" alt="Maxime" />
+        <h3>Maxime</h3>
+        <p>CapCut Editor</p>
+        <a href="maxime.html">View Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo">
+    <h2>Shorts Demo Reel</h2>
+    <p style="text-align:center;">Check out our best short-form edits — fast, punchy, and built to go viral.</p>
+    <video controls>
+      <source src="your-shorts-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="service-card">
+        <h3>Reels & Shorts</h3>
+        <p>Fast-paced edits for Instagram and TikTok</p>
+      </div>
+      <div class="service-card">
+        <h3>YouTube Videos</h3>
+        <p>Full-length edits with intros, transitions, and effects</p>
+      </div>
+      <div class="service-card">
+        <h3>Event Highlights</h3>
+        <p>Cinematic storytelling for weddings and parties</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Quick Cut</h3>
+        <p>₹500</p>
+        <p>Up to 1-minute video, basic transitions, music sync</p>
+      </div>
+      <div class="card">
+        <h3>YouTube Standard</h3>
+        <p>₹1000</p>
+        <p>Up to 10-minute video, jump cuts, overlays, intro/outro</p>
+      </div>
+      <div class="card">
+        <h3>Event Highlight</h3>
+        <p>₹1500</p>
+        <p>Up to 20-minute video, cinematic style, music, color grading</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xblaygol" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+	  <input type="Number" name="number" placeholder="Your Number" required />
+      <textarea name="message" rows="4" placeholder="Tell us about your video..." required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+</body>
+</html>
